@@ -49,7 +49,7 @@ var require = {
 <script type="text/javascript" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/js/utils.js"></script>
 <script type="text/javascript" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/POS_BusinessFlow/js/js.js"></script>
-<script type="text/javascript" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/js/home.js"></script>
+<script type="text/javascript" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/js/dashboard.js"></script>
 <script type="text/javascript" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/POS_PostageCalculator/js/postagecalc.js"></script>
 <script type="text/javascript" async="async" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/POS_Freshworks/js/push-data-product.js"></script>
 <link rel="preload" as="font" crossorigin="anonymous" href="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/fonts/GothamRegular.woff2">
@@ -771,31 +771,31 @@ require(['jquery', 'mage/url'], function ($, url) {
             <ul class="trackList home-widget-ui">
                 <li value="widgetTrackAndTrace">
                     <div>
-                      <img class="trackListIcon" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/home-widget-svg/trackandtraceDeactive.svg" alt="">
-                      <img class="img-top" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/home-widget-svg/trackandtraceActive.svg" alt="">
+                      <img class="trackListIcon" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/dashboard-widget-svg/trackandtraceDeactive.svg" alt="">
+                      <img class="img-top" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/dashboard-widget-svg/trackandtraceActive.svg" alt="">
                     </div>
                     <p class="trackListText">Track &amp; Trace</p>
                 </li>
                 <li value="widgetEcannot">
                     <div>
-                    <img class="trackListIcon" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/home-widget-svg/econnoteDeactive.svg">
-                    <img class="img-top" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/home-widget-svg/econnoteActive.svg">
+                    <img class="trackListIcon" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/dashboard-widget-svg/econnoteDeactive.svg">
+                    <img class="img-top" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/dashboard-widget-svg/econnoteActive.svg">
                     </div>
                     <p class="trackListText"> E-Consignment</p><p class="trackListText">Note</p>
                 </li>
                 <li value="widgetOutletFinder"><a href="https://www.pos.com.my/pos-outlet-finder/">
                         <div>
 
-                        <img class="trackListIcon" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/home-widget-svg/outletFinderDeactive.svg">
-                        <img class="img-top" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/home-widget-svg/outletFinderActive.svg">
+                        <img class="trackListIcon" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/dashboard-widget-svg/outletFinderDeactive.svg">
+                        <img class="img-top" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/dashboard-widget-svg/outletFinderActive.svg">
 
                         </div>
                         <p class="trackListText">Outlet Finder</p></a>
                 </li>
                 <li value="widgetPostageCalculator">
                     <div>
-                    <img class="trackListIcon" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/home-widget-svg/postageCalculatorDeactive.svg">
-                    <img class="img-top" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/home-widget-svg/postageCalculatorActive.svg">
+                    <img class="trackListIcon" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/dashboard-widget-svg/postageCalculatorDeactive.svg">
+                    <img class="img-top" src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/dashboard-widget-svg/postageCalculatorActive.svg">
                     </div>
                     <p class="trackListText">Postage </p><p class="trackListText">Calculator</p>
                 </li>
@@ -810,20 +810,20 @@ require(['jquery', 'mage/url'], function ($, url) {
         <div id="trackSearchInputContainer" class="widgetContainer container-fluid" style="display: block;">
             <div class="homeTrackSearchHeadSection" style="width: 39.5%;">
                 <div class="ddOutOfVision" id="size_select_msddHolder" style="height: 0px; overflow: hidden; position: absolute;"><select name="webmenu" id="size_select" tabindex="-1">
-                    <option value="widgetTrackAndTrace" title="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/home-widget-svg/trackandtraceActive.svg">
+                    <option value="widgetTrackAndTrace" title="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/dashboard-widget-svg/trackandtraceActive.svg">
                         Track &amp; Trace
                     </option>
-                    <option value="widgetEcannot" title="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/home-widget-svg/econnoteActive.svg">
+                    <option value="widgetEcannot" title="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/dashboard-widget-svg/econnoteActive.svg">
                          E-Consignment Note
                     </option>
-                    <option value="https://www.pos.com.my/pos-outlet-finder/" title="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/home-widget-svg/outletFinderActive.svg">
+                    <option value="https://www.pos.com.my/pos-outlet-finder/" title="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/dashboard-widget-svg/outletFinderActive.svg">
                         Outlet Finder
                     </option>
-                    <option value="widgetPostageCalculator" title="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/home-widget-svg/postageCalculatorActive.svg">
+                    <option value="widgetPostageCalculator" title="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/dashboard-widget-svg/postageCalculatorActive.svg">
                         Postage Calculator
                     </option>
 
-                </select></div><div class="dd ddcommon borderRadius" id="size_select_msdd" tabindex="0" style="width: 100px;"><div class="ddTitle borderRadiusTp"><span class="divider"></span><span class="ddArrow arrowoff"></span><span class="ddTitleText " id="size_select_title"><img src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/home-widget-svg/trackandtraceActive.svg" class="fnone"><span class="ddlabel">Track &amp; Trace</span><span class="description" style="display: none;"></span></span></div><input id="size_select_titleText" type="text" autocomplete="off" class="text shadow borderRadius" style="display: none;"><div class="ddChild ddchild_ border shadow" id="size_select_child" style="z-index: 9999; display: none; position: absolute; visibility: visible; height: 3px;"><ul><li class="enabled _msddli_ selected"><img src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/home-widget-svg/trackandtraceActive.svg" class="fnone"><span class="ddlabel">Track &amp; Trace</span><div class="clear"></div></li><li class="enabled _msddli_"><img src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/home-widget-svg/econnoteActive.svg" class="fnone"><span class="ddlabel">E-Consignment Note</span><div class="clear"></div></li><li class="enabled _msddli_"><img src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/home-widget-svg/outletFinderActive.svg" class="fnone"><span class="ddlabel">Outlet Finder</span><div class="clear"></div></li><li class="enabled _msddli_"><img src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/home-widget-svg/postageCalculatorActive.svg" class="fnone"><span class="ddlabel">Postage Calculator</span><div class="clear"></div></li></ul></div></div>
+                </select></div><div class="dd ddcommon borderRadius" id="size_select_msdd" tabindex="0" style="width: 100px;"><div class="ddTitle borderRadiusTp"><span class="divider"></span><span class="ddArrow arrowoff"></span><span class="ddTitleText " id="size_select_title"><img src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/dashboard-widget-svg/trackandtraceActive.svg" class="fnone"><span class="ddlabel">Track &amp; Trace</span><span class="description" style="display: none;"></span></span></div><input id="size_select_titleText" type="text" autocomplete="off" class="text shadow borderRadius" style="display: none;"><div class="ddChild ddchild_ border shadow" id="size_select_child" style="z-index: 9999; display: none; position: absolute; visibility: visible; height: 3px;"><ul><li class="enabled _msddli_ selected"><img src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/dashboard-widget-svg/trackandtraceActive.svg" class="fnone"><span class="ddlabel">Track &amp; Trace</span><div class="clear"></div></li><li class="enabled _msddli_"><img src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/dashboard-widget-svg/econnoteActive.svg" class="fnone"><span class="ddlabel">E-Consignment Note</span><div class="clear"></div></li><li class="enabled _msddli_"><img src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/dashboard-widget-svg/outletFinderActive.svg" class="fnone"><span class="ddlabel">Outlet Finder</span><div class="clear"></div></li><li class="enabled _msddli_"><img src="https://www.pos.com.my/static/version1633533254/frontend/Pos1/Mcommerce1/en_US/images/dashboard-widget-svg/postageCalculatorActive.svg" class="fnone"><span class="ddlabel">Postage Calculator</span><div class="clear"></div></li></ul></div></div>
             </div>
             <form action="#" id="posform" data-usingchatbot="">
                 <div id="widgetTrackAndTrace" class="size_chart" style="display: block;">
